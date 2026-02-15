@@ -16,8 +16,9 @@ public class VaccineService implements VaccineServiceInterface {
     public void setVaccineRepo(VaccineRepo vaccineRepo) {
        this.vaccineRepo = vaccineRepo;
     }
+
     @Override
-    public List<ResultView> findByCategoryIdLessThan(Integer categoryId) {
-        return vaccineRepo.findByCategoryIdLessThan(categoryId);
+    public List<ResultView> findByCategoryId(Integer categoryId) {
+        return  vaccineRepo.findByCategoryIdLessThan(categoryId);
     }
 }
